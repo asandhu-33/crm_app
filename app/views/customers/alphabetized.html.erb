@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Alphabetized Customers</h1>
+  
+  <p>
+    <%= link_to "All Customers", root_path %> | 
+    <%= link_to "Missing Email", customers_missing_email_path %>
+  </p>
+
+  <div class="customer-grid">
+    <%= render @customers %>
+  </div>
+</div>

@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root "customers#index"
   get "customers/index"
 
-  # Add these two new routes for Part 2:
   get "customers/alphabetized", to: "customers#alphabetized"
   get "customers/missing_email", to: "customers#missing_email"
   
